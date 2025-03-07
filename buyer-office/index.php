@@ -26,7 +26,7 @@ $APPLICATION->SetTitle("Кабинет покупателя");
 		"CACHE_TYPE" => "A",
 		"COMPOSITE_FRAME_MODE" => "A",
 		"COMPOSITE_FRAME_TYPE" => "AUTO",
-		"PAGE" => "#SITE_DIR#/bitrix/php_interface/subscribe/templates/news/template.php",
+		"PAGE" => "#SITE_DIR#personal/subscr_edit.php",
 		"SHOW_HIDDEN" => "N",
 		"USE_PERSONALIZATION" => "Y",
 		"COMPONENT_TEMPLATE" => ".default"

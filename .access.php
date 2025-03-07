@@ -1,4 +1,12 @@
 <?
+$PERM["bitrix"]["2"]="D";
+$PERM["bitrix"]["3"]="D";
+$PERM["bitrix"]["4"]="D";
+$PERM["bitrix"]["8"]="D";
+$PERM["bitrix"]["6"]="D";
+$PERM["bitrix"]["7"]="D";
+$PERM["bitrix"]["5"]="D";
+$PERM["bitrix"]["*"]="D";
 $PERM["buyer-office"]["6"]="W";
 $PERM["buyer-office"]["*"]="D";
 $PERM["sales-office"]["7"]="X";
