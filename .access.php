@@ -1,4 +1,6 @@
 <?
+$PERM["/"]["8"]="X";
+$PERM["/"]["*"]="R";
 $PERM["bitrix"]["2"]="D";
 $PERM["bitrix"]["3"]="D";
 $PERM["bitrix"]["4"]="D";
@@ -18,5 +20,4 @@ $PERM["news"]["5"]="W";
 $PERM["contacts"]["5"]="W";
 $PERM["company"]["5"]="W";
 $PERM["index.php"]["5"]="W";
-$PERM["/"]["*"]="R";
 ?>
