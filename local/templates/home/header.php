@@ -1,5 +1,3 @@
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");?>
-
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
 IncludeTemplateLangFile(__FILE__);
@@ -32,6 +30,20 @@ IncludeTemplateLangFile(__FILE__);
   Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/aos.css');
   Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/style.css');
 ?>
+
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-3.3.1.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery-ui.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/popper.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/bootstrap.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/owl.carousel.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/mediaelement-and-player.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.stellar.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.countdown.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.magnific-popup.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/bootstrap-datepicker.min.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/aos.js"></script>
+  <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js"></script>
 
   <link rel="shortcut icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico" type="image/x-icon">
   
