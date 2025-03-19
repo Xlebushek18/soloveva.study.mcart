@@ -22,18 +22,18 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Кабинет продавца", 
-		"/sales-office/", 
-		Array(), 
-		Array(), 
-		"CSite::InGroup(array(1,7))" 
-	),
-	Array(
-		"Кабинет покупателя", 
+		"Для покупателя", 
 		"/buyer-office/", 
 		Array(), 
 		Array(), 
 		"CSite::InGroup(array(1,6))" 
+	),
+	Array(
+		"Для продавца", 
+		"/sales-office/", 
+		Array(), 
+		Array(), 
+		"CSite::InGroup(array(1,7))" 
 	)
 );
 ?>

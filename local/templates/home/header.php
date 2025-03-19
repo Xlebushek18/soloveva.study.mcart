@@ -99,17 +99,17 @@ IncludeTemplateLangFile(__FILE__);
           </div>
           <div class="col-6 col-md-6 text-right">
           <?$APPLICATION->IncludeComponent(
-            "bitrix:main.include",
-            "",
-            Array(
-              "AREA_FILE_SHOW" => "file",
-              "AREA_FILE_SUFFIX" => "inc",
-              "COMPOSITE_FRAME_MODE" => "A",
-              "COMPOSITE_FRAME_TYPE" => "AUTO",
-              "EDIT_TEMPLATE" => "",
-              "PATH" => "local/templates/home/components/header/social.php"
-            )
-          );?>
+             "bitrix:main.include",
+             "",
+             Array(
+               "AREA_FILE_SHOW" => "file",
+               "AREA_FILE_SUFFIX" => "inc",
+               "COMPOSITE_FRAME_MODE" => "A",
+               "COMPOSITE_FRAME_TYPE" => "AUTO",
+               "EDIT_TEMPLATE" => "",
+               "PATH" => "local/templates/home/components/header/social.php"
+             )
+           );?>
           </div>
         </div>
       </div>
@@ -134,41 +134,9 @@ IncludeTemplateLangFile(__FILE__);
             );?>
             </h1>
           </div>
-          <div class="col-4 col-md-4 col-lg-8">
-            <nav class="site-navigation text-right text-md-right" role="navigation">
-
-              <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
-                  class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-
-              <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active">
-                  <a href="index.html"><?=GetMessage('HOME')?></a>
-                </li>
-                <li class="has-children">
-                  <a href="properties.html">Properties</a>
-                  <ul class="dropdown">
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Rent</a></li>
-                    <li><a href="#">Lease</a></li>
-                    <li class="has-children">
-                      <a href="#">Menu</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-
-            <?$APPLICATION->IncludeComponent(
+          <?$APPLICATION->IncludeComponent(
               "bitrix:menu", 
-              "horizontal_multilevel", 
+              "new_menu", 
               array(
                 "ROOT_MENU_TYPE" => "top",
                 "MAX_LEVEL" => "3",
@@ -179,7 +147,7 @@ IncludeTemplateLangFile(__FILE__);
                 "MENU_CACHE_USE_GROUPS" => "Y",
                 "MENU_CACHE_GET_VARS" => array(
                 ),
-                "COMPONENT_TEMPLATE" => "horizontal_multilevel",
+                "COMPONENT_TEMPLATE" => "new_menu",
                 "DELAY" => "Y",
                 "ALLOW_MULTI_SELECT" => "N",
                 "COMPOSITE_FRAME_MODE" => "A",
@@ -190,10 +158,6 @@ IncludeTemplateLangFile(__FILE__);
                 "ACTIVE_COMPONENT" => "Y"
               )
             );?>
-
-
-
-          </div>
 
 
         </div>

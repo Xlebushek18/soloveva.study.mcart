@@ -26,29 +26,9 @@
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="row mb-5">
             <div class="col-md-12">
-              <h3 class="footer-heading mb-4">Navigations</h3>
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Rent</a></li>
-                <li><a href="#">Properties</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6 col-lg-6">
-              <ul class="list-unstyled">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <?$APPLICATION->IncludeComponent(
+            <?$APPLICATION->IncludeComponent(
               "bitrix:menu", 
-              "horizontal_multilevel", 
+              "new_footer", 
               array(
                 "ROOT_MENU_TYPE" => "top",
                 "MAX_LEVEL" => "3",
@@ -59,7 +39,7 @@
                 "MENU_CACHE_USE_GROUPS" => "Y",
                 "MENU_CACHE_GET_VARS" => array(
                 ),
-                "COMPONENT_TEMPLATE" => "horizontal_multilevel",
+                "COMPONENT_TEMPLATE" => "new_footer",
                 "DELAY" => "Y",
                 "ALLOW_MULTI_SELECT" => "N",
                 "COMPOSITE_FRAME_MODE" => "A",
@@ -70,7 +50,8 @@
                 "ACTIVE_COMPONENT" => "Y"
               )
             );?>
-
+            </div>
+          </div>
         </div>
 
         

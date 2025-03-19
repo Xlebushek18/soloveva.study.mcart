@@ -1,0 +1,15 @@
+<?
+$MESS['MENU_HOME'] = 'Home';
+$MESS['MENU_ADS'] = 'Ads';
+$MESS['MENU_SERVICE'] = 'About Service';
+$MESS['MENU_SERVICE_VACANCIES'] = 'Vacancies';
+$MESS['MENU_SERVICE_CONTACTS'] = 'Contacts';
+$MESS['MENU_SERVICE_CONTACTS_ROUTINE_CONNECT'] = 'Feedback';
+$MESS['MENU_SERVICE_NEWS'] = 'News';
+$MESS['MENU_SERVICE_AGENTS'] = 'Agents';
+$MESS['MENU_BUYER_OFFICE'] = 'For Buyers';
+$MESS['MENU_BUYER_OFFICE_SELECTED'] = 'Favorites';
+$MESS['MENU_SALES_OFFICE'] = 'For Sellers';
+$MESS['MENU_SALES_OFFICE_MY_ADS'] = 'My Ads';
+$MESS['MENU_ITEM_ACCESS_DENIED'] = 'Access Denied';
+?>
