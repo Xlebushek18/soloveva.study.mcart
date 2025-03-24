@@ -1,7 +1,8 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("");
+$APPLICATION->SetTitle("Главная страница");
 ?>
+<?$APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");?>
 
  <?php
 $arFilter = [

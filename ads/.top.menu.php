@@ -16,20 +16,20 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"О сервисе", 
-		"/servise", 
+		"/services/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Кабинет продавца", 
+		"Для продавца", 
 		"/sales-office", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Кабинет покупателя", 
+		"Для покупателя", 
 		"/buyer-office", 
 		Array(), 
 		Array(), 

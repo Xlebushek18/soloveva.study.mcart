@@ -1,7 +1,5 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
-IncludeTemplateLangFile(__FILE__);
-?>
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>  
+<?IncludeTemplateLangFile(__FILE__);?>
 
 <!DOCTYPE html>
 <html lang="<?=LANGUAGE_ID?>">
@@ -72,65 +70,37 @@ IncludeTemplateLangFile(__FILE__);
           <div class="col-6 col-md-6">
             <p class="mb-0">
             <?$APPLICATION->IncludeComponent(
-              "bitrix:main.include",
-              "",
-              Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "COMPOSITE_FRAME_MODE" => "A",
-                "COMPOSITE_FRAME_TYPE" => "AUTO",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "local/templates/home/components/header/phone.php"
-              )
+                "bitrix:main.include",
+                "",
+                array("AREA_FILE_SHOW" => "file", "PATH" => SITE_TEMPLATE_PATH . "/components/header/phone.php")
             );?>
-              <?$APPLICATION->IncludeComponent(
-              "bitrix:main.include",
-              "",
-              Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "COMPOSITE_FRAME_MODE" => "A",
-                "COMPOSITE_FRAME_TYPE" => "AUTO",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "local/templates/home/components/header/email.php"
-              )
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                array("AREA_FILE_SHOW" => "file", "PATH" => SITE_TEMPLATE_PATH . "/components/header/email.php")
             );?>
             </p>
           </div>
           <div class="col-6 col-md-6 text-right">
-          <?$APPLICATION->IncludeComponent(
-             "bitrix:main.include",
-             "",
-             Array(
-               "AREA_FILE_SHOW" => "file",
-               "AREA_FILE_SUFFIX" => "inc",
-               "COMPOSITE_FRAME_MODE" => "A",
-               "COMPOSITE_FRAME_TYPE" => "AUTO",
-               "EDIT_TEMPLATE" => "",
-               "PATH" => "local/templates/home/components/header/social.php"
-             )
-           );?>
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "",
+                array("AREA_FILE_SHOW" => "file", "PATH" => SITE_TEMPLATE_PATH . "/components/header/social.php")
+            );?>
           </div>
         </div>
       </div>
-
     </div>
+
     <div class="site-navbar">
       <div class="container py-1">
         <div class="row align-items-center">
           <div class="col-8 col-md-8 col-lg-4">
             <h1 class="">
             <?$APPLICATION->IncludeComponent(
-              "bitrix:main.include",
-              "",
-              Array(
-                "AREA_FILE_SHOW" => "file",
-                "AREA_FILE_SUFFIX" => "inc",
-                "COMPOSITE_FRAME_MODE" => "A",
-                "COMPOSITE_FRAME_TYPE" => "AUTO",
-                "EDIT_TEMPLATE" => "",
-                "PATH" => "local/templates/home/components/header/logo.php"
-              )
+                "bitrix:main.include",
+                "",
+                array("AREA_FILE_SHOW" => "file", "PATH" => SITE_TEMPLATE_PATH . "/components/header/logo.php")
             );?>
             </h1>
           </div>
@@ -145,23 +115,22 @@ IncludeTemplateLangFile(__FILE__);
                 "MENU_CACHE_TYPE" => "N",
                 "MENU_CACHE_TIME" => "36000000",
                 "MENU_CACHE_USE_GROUPS" => "Y",
-                "MENU_CACHE_GET_VARS" => array(
-                ),
-                "COMPONENT_TEMPLATE" => "new_menu",
                 "DELAY" => "Y",
-                "ALLOW_MULTI_SELECT" => "N",
-                "COMPOSITE_FRAME_MODE" => "A",
-                "COMPOSITE_FRAME_TYPE" => "STATIC"
+                "ALLOW_MULTI_SELECT" => "N"
               ),
-              false,
-              array(
-                "ACTIVE_COMPONENT" => "Y"
-              )
+              false
             );?>
-
-
         </div>
       </div>
     </div>
+    <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "nav", Array(
+      "COMPOSITE_FRAME_MODE" => "A",	// Голосование шаблона компонента по умолчанию
+        "COMPOSITE_FRAME_TYPE" => "AUTO",	// Содержимое компонента
+        "PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+        "SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+        "START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
+      ),
+      false
+    );?>
   </div>
 
